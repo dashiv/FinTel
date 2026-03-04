@@ -1,0 +1,90 @@
+# ============================================================
+# FINTEL — REQUIREMENTS
+# ============================================================
+# Install current packages:
+#   pip install -r requirements.txt
+#
+# DO NOT install future packages until you reach that phase.
+# See PRODUCT_REQUIREMENTS.md for full roadmap.
+# ============================================================
+
+
+# ── PHASE 1-2: CORE (INSTALLED NOW) ─────────────────────────
+
+# HTTP + web
+requests
+beautifulsoup4
+lxml
+feedparser              # Google News RSS parsing
+
+# Data
+yfinance                # Stock price history + real-time quotes
+pandas
+numpy
+
+# Technical indicators
+# NOTE: use 'ta', NOT 'pandas-ta' — pandas-ta breaks on Python 3.14
+ta
+
+# Local AI
+ollama                  # Ollama Python client (connects to local Ollama server)
+
+# Dashboard
+streamlit
+plotly
+
+# Database / config
+python-dotenv           # Load secrets from .env file
+
+# Logging + CLI
+loguru                  # Better logging than Python's built-in logging
+rich                    # Colour-coded terminal output, tables, progress bars
+
+# Reliability
+tenacity                # Retry logic for API calls (auto-retry on failure)
+
+# Scheduling
+APScheduler             # Run agents on a schedule (daily, hourly etc.)
+
+
+# ── PHASE 3: SIGNAL ANALYST ──────────────────────────────────
+# (already covered by ta, yfinance, feedparser above)
+
+
+# ── PHASE 4: DASHBOARD ───────────────────────────────────────
+# (already covered by streamlit, plotly above)
+
+
+# ── PHASE 5: BACKTESTING + ML ────────────────────────────────
+# Uncomment when you reach Phase 5
+
+# scikit-learn          # Classic ML models: RandomForest, LogisticRegression etc.
+# xgboost               # XGBoost — best-in-class gradient boosting
+# lightgbm              # LightGBM — faster XGBoost alternative for large data
+# mlflow                # Experiment tracking: log model accuracy, parameters, runs
+# shap                  # ML explainability — WHY did the model give this score?
+
+
+# ── PHASE 6: IBKR TRADING AGENT ─────────────────────────────
+# Uncomment when you reach Phase 6
+
+# ib_insync             # Interactive Brokers TWS API wrapper
+                        # Requires: IBKR account + TWS desktop app running locally
+
+
+# ── PHASE 7: REAL-TIME STOCKS + GEOPOLITICAL SIGNALS ─────────
+# Uncomment when you reach Phase 7
+
+# transformers          # HuggingFace — includes FinBERT (financial sentiment NLP)
+# torch                 # PyTorch — required by transformers
+# gdelt-doc             # GDELT geopolitical event dataset (free, global)
+# websocket-client      # For real-time price streaming
+
+
+# ── PHASE 8: ADVANCED MLOps + CONTINUOUS LEARNING ────────────
+# Uncomment when you reach Phase 8
+
+# statsmodels           # Statistical modelling, hypothesis testing, time-series
+# scipy                 # Scientific computing, probability distributions
+# optuna                # Hyperparameter optimisation (replaces manual grid search)
+# backtrader            # Backtesting framework (alternative to custom engine)

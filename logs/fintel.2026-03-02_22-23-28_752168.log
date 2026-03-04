@@ -1,0 +1,10 @@
+2026-03-02 22:23:28 | INFO     | utils.db:31 | Initialising database: fintel.db
+2026-03-02 22:23:28 | SUCCESS  | utils.db:140 | ✅ Database ready
+2026-03-02 22:54:19 | INFO     | utils.db:31 | Initialising database: fintel.db
+2026-03-02 22:54:19 | SUCCESS  | utils.db:140 | ✅ Database ready
+2026-03-02 22:56:00 | INFO     | utils.db:31 | Initialising database: fintel.db
+2026-03-02 22:56:00 | SUCCESS  | utils.db:140 | ✅ Database ready
+2026-03-02 23:21:53 | INFO     | utils.db:31 | Initialising database: fintel.db
+2026-03-02 23:21:53 | SUCCESS  | utils.db:140 | ✅ Database ready
+2026-03-03 00:43:24 | INFO     | utils.db:31 | Initialising database: fintel.db
+2026-03-03 00:43:24 | SUCCESS  | utils.db:140 | ✅ Database ready

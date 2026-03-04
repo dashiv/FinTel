@@ -1,0 +1,11 @@
+────────────────────────────────────────────────────────
+1.  cd "C:\Users\iamsh\OneDrive\Desktop\AI Project\fintel"
+2.  venv\Scripts\activate                    ← wait for (venv) to appear
+3.  [In separate window] ollama serve        ← keeps AI running (if not already)
+────────────────────────────────────────────────────────
+THEN RUN WHATEVER YOU NEED:
+    python -m utils.llm                      ← test AI
+    python -m agents.ipo_scout --days 30     ← scan IPOs
+    streamlit run dashboard/app.py           ← open dashboard
+
+ollama list

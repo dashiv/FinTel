@@ -1,0 +1,121 @@
+# FINTEL PROJECT — FULL CONTEXT DOCUMENT
+# Generated: March 2, 2026
+# Paste this at the start of any AI session (Perplexity, Gemini, Claude, etc.)
+
+---
+
+## 1. WHO IS SHIVAM
+
+- Name: Shivam Datta | Location: Luxembourg (since Dec 2021)
+- Email (personal): iamshivamdatta@gmail.com
+- Email (tools/APIs): uniquestar333@gmail.com — ALL tool registrations use this
+- Employment: Garden leave from Amazon until ~May 2026
+- Financial runway: Comfortable until April/May 2027
+
+---
+
+## 2. PROFESSIONAL BACKGROUND
+
+Python: Rebuilding (beginner) | SQL: Strong | BI (Tableau/PowerBI): Strong
+ML: Rebuilding in Python | AWS: Dated | LLMs/AI Engineering: Learning via FinTel
+Last role: Business Analyst Manager, Amazon Luxembourg (2021–2025, laid off)
+
+---
+
+## 3. GOALS — PRIORITY ORDER
+
+1. Luxembourg Passport — eligible Dec 2026. Account created at inll.lu March 2.
+   July 9 Sproochentest slot available — TAKE IT. Study Luxembourgish daily.
+2. Become AI Engineer — learn by building FinTel. Target H2 2026 for job search.
+3. FinTel Platform — learning vehicle first, trading tool second, SaaS third.
+4. Indian Textiles Import — parallel track, not primary income short term.
+
+---
+
+## 4. FINTEL — WHAT IT IS
+
+Local, zero-cost AI financial intelligence platform on Windows machine.
+Scans SEC EDGAR for IPO filings → scores with AI → displays on Streamlit dashboard.
+Luxembourg tax optimised: hold >183 days = zero capital gains tax.
+Project path: C:\Users\iamsh\OneDrive\Desktop\AI Project\fintel
+
+---
+
+## 5. HARDWARE
+
+RAM: 16GB | GPU: NVIDIA GTX 1650 (4GB VRAM) | OS: Windows
+Constraint: Models >4GB spill from VRAM into RAM — works but slower.
+
+---
+
+## 6. SETUP STATUS (March 2, 2026) — ALL COMPLETE
+
+Python 3.14.3, venv, SQLite (5 tables), Ollama, Cursor — all done.
+Library note: uses 'ta' NOT 'pandas-ta' (pandas-ta incompatible with Python 3.14).
+Dashboard: working at localhost:8501, showing real data.
+
+Models installed (all run offline, no cost, no internet needed):
+- gemma3:1b (815MB) — fast, simple tasks
+- mistral:7b (4.4GB) — IPO classification
+- deepseek-r1:7b (4.7GB) — deep reasoning
+
+---
+
+## 7. BUGS FIXED
+
+Bug 1: pandas-ta → replaced with 'ta' library.
+Bug 2: IPO scan saved 185 filings as Unknown/score=0 → SEC endpoint returned empty JSON.
+Bug 3: SEC EDGAR 403 Forbidden → feedparser sent wrong User-Agent.
+Fix: Use requests library with header: "User-Agent": "FinTel Research Tool uniquestar333@gmail.com"
+Then pass raw XML to feedparser. Fixed ipo_scout.py deployed.
+
+---
+
+## 8. COMMANDS REFERENCE
+
+Every session:
+  cd "%USERPROFILE%\OneDrive\Desktop\AI Project\fintel"
+  venv\Scripts\activate
+
+Run system:
+  python -m utils.init_db
+  python -m agents.ipo_scout --days 30
+  streamlit run dashboard/app.py
+
+Check data:
+  python -c "import sqlite3; conn=sqlite3.connect('fintel.db'); rows=conn.execute('SELECT company_name, score FROM ipo_filings LIMIT 10').fetchall(); [print(r) for r in rows]; conn.close()"
+
+Clear bad data:
+  python -c "import sqlite3; conn=sqlite3.connect('fintel.db'); conn.execute('DELETE FROM ipo_filings'); conn.commit(); conn.close(); print('Cleared')"
+
+Check models: ollama list
+If Ollama not running: ollama serve (separate Command Prompt)
+
+---
+
+## 9. PENDING ITEMS
+
+1. Confirm ipo_scout.py fix is live and scan shows real company names
+2. Set up two Claude Projects (FinTel—Build and Life & Financial Advisor)
+3. Phase 2: complete TODOs in agents/signal_analyst.py
+4. Mobile access: ipconfig → find IPv4 → open http://[IP]:8501 on phone (same WiFi)
+5. Register for Sproochentest July 9 slot at inll.lu
+
+---
+
+## 10. MOBILE ACCESS PLAN
+
+Home WiFi: run ipconfig | findstr "IPv4" → open http://[laptop-IP]:8501 on phone.
+Anywhere: install ngrok (~30 min setup) for public URL.
+No native app needed — Streamlit works on mobile browser, can pin as PWA.
+
+---
+
+## 11. ADVISOR RULES
+
+- Honest over encouraging. No skill inflation on resume ever.
+- Runway is fine — build properly, don't rush.
+- Passport is most time-sensitive. Always remind.
+- Python level: beginner rebuilding. Explain WHY errors happen, not just fixes.
+- Tools: Cursor (write code), Command Prompt (run code), Ollama (local AI), Claude, Gemini.
+- Command Prompt must stay open while Streamlit runs.

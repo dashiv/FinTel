@@ -1,0 +1,54 @@
+{
+  "sectors": {
+    "artificial_intelligence": {
+      "display_name": "Artificial Intelligence & Machine Learning",
+      "keywords": ["artificial intelligence","machine learning","deep learning","neural network","large language model","llm","generative ai","computer vision","nlp","ai infrastructure","gpu computing"],
+      "growth_outlook": "very_high"
+    },
+    "quantum_computing": {
+      "display_name": "Quantum Computing",
+      "keywords": ["quantum computing","quantum processor","qubit","quantum hardware","quantum cryptography","quantum networking"],
+      "growth_outlook": "very_high"
+    },
+    "semiconductors_gan": {
+      "display_name": "Semiconductors & GaN Manufacturing",
+      "keywords": ["semiconductor","gallium nitride","gan","silicon carbide","sic","chip manufacturing","wafer","foundry","integrated circuit","power electronics","compound semiconductor"],
+      "growth_outlook": "very_high"
+    },
+    "drone_aviation": {
+      "display_name": "Drones & Advanced Aviation",
+      "keywords": ["drone","unmanned aerial vehicle","uav","evtol","electric aircraft","air taxi","advanced air mobility","autonomous flight","urban air mobility"],
+      "growth_outlook": "high"
+    },
+    "pharma_biotech": {
+      "display_name": "Pharma & Biotech",
+      "keywords": ["pharmaceutical","biotechnology","drug discovery","clinical trial","fda approval","biologics","gene therapy","mrna","oncology","rare disease","genomics"],
+      "growth_outlook": "high"
+    },
+    "defense_tech": {
+      "display_name": "Defense Technology",
+      "keywords": ["defense","defence","military","electronic warfare","counter-drone","surveillance","autonomous weapons","missile","radar","nato"],
+      "growth_outlook": "high"
+    },
+    "clean_energy": {
+      "display_name": "Clean Energy & Storage",
+      "keywords": ["solar","wind energy","battery storage","energy storage","green hydrogen","fuel cell","carbon capture","offshore wind","ev charging"],
+      "growth_outlook": "high"
+    },
+    "cybersecurity": {
+      "display_name": "Cybersecurity",
+      "keywords": ["cybersecurity","endpoint security","zero trust","siem","threat intelligence","identity management","cloud security","network security","ransomware"],
+      "growth_outlook": "high"
+    },
+    "space_tech": {
+      "display_name": "Space Technology",
+      "keywords": ["space","satellite","launch vehicle","rocket","low earth orbit","leo","remote sensing","earth observation","in-space manufacturing"],
+      "growth_outlook": "high"
+    },
+    "fintech": {
+      "display_name": "Financial Technology",
+      "keywords": ["fintech","payments","digital banking","neobank","blockchain","defi","regtech","insurtech","lending platform","embedded finance","open banking"],
+      "growth_outlook": "medium"
+    }
+  }
+}
