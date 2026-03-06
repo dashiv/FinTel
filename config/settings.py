@@ -1,6 +1,8 @@
 # ============================================================
 # FinTel Settings
-# This is YOUR personal config file. Never share this file.
+# Personal config for: dashiv (Shivam Datta)
+# Email: iamshivamdatta@gmail.com
+# Location: Luxembourg | Capital: €5,000
 # ============================================================
 
 # --- AI Models (Ollama runs locally - free) ---
