@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/iamsh/OneDrive/Desktop/AI Project/fintel/mlflow_runs/153180820146054763/de1730f5f2d640e7a7544ec120a63de4/artifacts
+end_time: 1772835414652
+entry_point_name: ''
+experiment_id: '153180820146054763'
+lifecycle_stage: active
+run_id: de1730f5f2d640e7a7544ec120a63de4
+run_name: svb_stabilisation
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772835412784
+status: 3
+tags: []
+user_id: iamsh

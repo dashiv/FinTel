@@ -1,0 +1,1 @@
+['filing_type', 'state', 'sic_description', 'filing_tech_cycle', 'ipo_price', 'ipo_market_temp_90d', 'filing_year', 'filing_month', 'filing_quarter', 'event_count_total', 'evt_crash', 'evt_macro', 'evt_geo', 'evt_tech', 'evt_reg', 'days_to_next_crash', 'return_30d', 'return_60d', 'return_90d', 'return_180d']

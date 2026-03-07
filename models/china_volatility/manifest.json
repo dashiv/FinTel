@@ -1,0 +1,55 @@
+{
+  "regime": "china_volatility",
+  "trained_at": "2026-03-06T23:16:33.666223",
+  "features": [
+    "filing_type",
+    "state",
+    "sic_description",
+    "filing_tech_cycle",
+    "ipo_price",
+    "ipo_market_temp_90d",
+    "filing_year",
+    "filing_month",
+    "filing_quarter",
+    "event_count_total",
+    "evt_crash",
+    "evt_macro",
+    "evt_geo",
+    "evt_tech",
+    "evt_reg",
+    "days_to_next_crash",
+    "return_30d",
+    "return_60d",
+    "return_90d",
+    "return_180d"
+  ],
+  "tasks": {
+    "task_a": {
+      "model_path": "C:\\Users\\iamsh\\OneDrive\\Desktop\\AI Project\\fintel\\models\\china_volatility\\task_a.joblib",
+      "metrics": {
+        "mae": 1.1933637163924178,
+        "r2": -7.091617030976879,
+        "n_train": 90
+      }
+    },
+    "task_b": {
+      "model_path": "C:\\Users\\iamsh\\OneDrive\\Desktop\\AI Project\\fintel\\models\\china_volatility\\task_b.joblib",
+      "metrics": {
+        "label_encoder": "LabelEncoder()",
+        "accuracy": 0.47619047619047616,
+        "f1": 0.41604010025062654,
+        "n_train": 90
+      }
+    },
+    "task_c": {
+      "model_path": "C:\\Users\\iamsh\\OneDrive\\Desktop\\AI Project\\fintel\\models\\china_volatility\\task_c.joblib",
+      "metrics": {
+        "accuracy": 1.0,
+        "auc": 1.0,
+        "win_rate": 1.0,
+        "n_train": 90
+      }
+    }
+  },
+  "encoders_path": "C:\\Users\\iamsh\\OneDrive\\Desktop\\AI Project\\fintel\\models\\china_volatility\\encoders.joblib"
+}

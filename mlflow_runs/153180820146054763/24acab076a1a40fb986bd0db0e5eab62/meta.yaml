@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/iamsh/OneDrive/Desktop/AI Project/fintel/mlflow_runs/153180820146054763/24acab076a1a40fb986bd0db0e5eab62/artifacts
+end_time: 1772835396305
+entry_point_name: ''
+experiment_id: '153180820146054763'
+lifecycle_stage: active
+run_id: 24acab076a1a40fb986bd0db0e5eab62
+run_name: covid_zirp_spac_boom
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772835393782
+status: 3
+tags: []
+user_id: iamsh

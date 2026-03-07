@@ -14,6 +14,29 @@ Each entry = one significant event: a design decision, a file created/changed, a
 ## LOG
 
 ---
+
+## Session: March 6, 2026
+
+### Completed
+- ✅ Architected dual-DB design: `fintel_events.db` (reference) + `fintel_historical.db` (IPO data)
+- ✅ Built `utils/events_db.py` — 65 events, 19 market regimes, 8 tech cycles, extensible via `event_attributes`
+- ✅ Built `collect_historical_ipos.py` v3 — currently running overnight (1996–2026)
+- ✅ Built `train_models.py` — per-regime XGBoost, 3 tasks (regression + 4-class + binary beat-SPY)
+- ✅ Rebuilt `app.py` → v3.0 — fixed all syntax/logic errors, added Heatmap page
+- ✅ Built `utils/model_scorer.py` — inference engine with composite FinTel Score formula
+- ✅ Built `scripts/score_new_ipos.py` — daily scoring pipeline
+- ✅ Created `DASHBOARD_GUIDE.md` — living documentation file
+
+### Running Overnight
+- 🔄 `collect_historical_ipos.py` — collecting 30yr of IPO data
+
+### Tomorrow Sequence
+1. Check collection complete
+2. `python scripts/train_models.py`
+3. `mlflow ui` to review per-regime metrics
+4. `python scripts/score_new_ipos.py --days 90`
+5. Refresh dashboard → first AI-scored signals visible
+
 ### 2026-03-05 — AI Summary & Test Hardening (Complete)
 
 **Agent:** Antigravity (Claude Haiku 4.5)  

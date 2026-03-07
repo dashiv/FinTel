@@ -1,0 +1,55 @@
+{
+  "regime": "svb_stabilisation",
+  "trained_at": "2026-03-06T23:16:54.580678",
+  "features": [
+    "filing_type",
+    "state",
+    "sic_description",
+    "filing_tech_cycle",
+    "ipo_price",
+    "ipo_market_temp_90d",
+    "filing_year",
+    "filing_month",
+    "filing_quarter",
+    "event_count_total",
+    "evt_crash",
+    "evt_macro",
+    "evt_geo",
+    "evt_tech",
+    "evt_reg",
+    "days_to_next_crash",
+    "return_30d",
+    "return_60d",
+    "return_90d",
+    "return_180d"
+  ],
+  "tasks": {
+    "task_a": {
+      "model_path": "C:\\Users\\iamsh\\OneDrive\\Desktop\\AI Project\\fintel\\models\\svb_stabilisation\\task_a.joblib",
+      "metrics": {
+        "mae": 2.99802305281483,
+        "r2": -115.42015344163258,
+        "n_train": 64
+      }
+    },
+    "task_b": {
+      "model_path": "C:\\Users\\iamsh\\OneDrive\\Desktop\\AI Project\\fintel\\models\\svb_stabilisation\\task_b.joblib",
+      "metrics": {
+        "label_encoder": "LabelEncoder()",
+        "accuracy": 0.8181818181818182,
+        "f1": 0.8609625668449198,
+        "n_train": 64
+      }
+    },
+    "task_c": {
+      "model_path": "C:\\Users\\iamsh\\OneDrive\\Desktop\\AI Project\\fintel\\models\\svb_stabilisation\\task_c.joblib",
+      "metrics": {
+        "accuracy": 0.7272727272727273,
+        "auc": NaN,
+        "win_rate": 0.0,
+        "n_train": 64
+      }
+    }
+  },
+  "encoders_path": "C:\\Users\\iamsh\\OneDrive\\Desktop\\AI Project\\fintel\\models\\svb_stabilisation\\encoders.joblib"
+}
