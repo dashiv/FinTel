@@ -1,0 +1,44 @@
+# Secrets — NEVER commit
+.env
+*.env
+
+# Databases — too large, local only
+*.db
+*.sqlite
+*.sqlite3
+
+# ML models — binary files, regenerate with train_models.py
+models/
+!models/.gitkeep
+
+# MLflow experiment logs — local only
+mlflow_runs/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Logs
+logs/*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# Backup files
+*_backup.py
+*.bak
